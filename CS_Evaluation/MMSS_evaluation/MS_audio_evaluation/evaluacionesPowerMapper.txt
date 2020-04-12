@@ -1,0 +1,23 @@
+-aria6 -aria10
+si <AUDIO> tiene ARIA-LABEL  -100%
+	<audio aria-label='Audio aria label'>
+    	<source type='audio/mp3' src='harpsicord.mp3'></source>
+	</audio>
+si <AUDIO> tiene ARIA-LABELLEDBY  - 100%
+	<audio aria-labelledby='audio-aria-labelledby-id'>
+        <source type='audio/mp3' src='harpsicord.mp3'></source>
+    </audio>
+    <p id='audio-aria-labelledby-id' style='display:none'>This is ARIA-LABELLEDBY text</p>
+si <AUDIO> tiene TITLE  - 100%
+	<audio title='Audio title'>
+        <source type='audio/mp3' src='harpsicord.mp3'></source>
+    </audio>
+si <AUDIO> tiene contenido de apoyo - 100%
+	<audio>
+	    <source type='audio/mp3' src='harpsicord.mp3'></source>
+	    fallback content
+	</audio>
+si <AUDIO> no tiene descripcion - 100%
+    <audio>
+        <source type='audio/mp3' src='harpsicord.mp3'></source>
+    </audio>

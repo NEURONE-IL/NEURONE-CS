@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <html lang="en">
+		<head>
+			<meta charset="utf-8"/>
+			<title> SC: Service Compatibility  </title>
+			<link rel="stylesheet" href="{{ url_for('static', filename='styles/u.css') }}">
+			<style>
+				.text-info {
+					text-align: center;
+					margin: 0%;
+					padding: 1% 20% 1% 20%;
+					background-color: #222221;
+					border-radius: 0px 0px 4px 4px;
+					color: rgba(255, 255, 255, 0.7);
+				    letter-spacing: 1px;
+				    line-height: 1.5;
+				    font-style: oblique;
+				}
+				code {
+				  font-family: monospace;
+				  background: rgba(163, 206, 241, 0.3);
+    			  color: rgb(10, 25, 100);
+    			  word-break: break-word;
+				}
+				h1 {
+					border-radius: 0px;
+				}
+				textarea.hidden, 
+				input.hidden {
+				    display: none;
+				}
+				input[type="checkbox"] {
+				    border-radius:4px;
+				    -webkit-appearance:button;
+				    border:1px rgb(54,134,214) solid;
+				    /*background-color: rgb(255,255,255);*/
+				    width:1.5em;
+				    height:1.5em;
+					vertical-align: middle;
+					margin-bottom: .5%;
+					margin-top: 0;
+				}
+
+				input[type="checkbox"]:checked {
+				    border-radius: 4px;
+				    border-color: rgb(54,134,214);
+				    border-width: 2px;
+				    box-shadow: 0px 0px 20px 3px rgb(255,255,255) inset;
+				    background-color: rgb(55,198,245);
+				}
+
+				input[type="checkbox"]:hover, 
+				input[type="checkbox"]:focus,
+				input[type="checkbox"]:checked,
+				.form-control:hover {
+				    box-shadow: 0px 0px 2px 1px rgba(55,198,245,.8);
+				}
+
+				div.checkbox{
+					line-height: 2em;
+					display: inline;
+				}
+				input.checkbox{
+					display: inline;
+				}
+				p.col-right {
+					color: #0e2563;
+					display: table-cell;
+					padding-left: 5px;
+					text-align: left;
+				}
+				hr {
+				    border: #66afe9 .5px solid;
+				}
+				p.col-left {
+					color: #747473;
+					display: table-cell;
+					padding-left: 10px;
+					text-align: right;
+					min-width: 140px;
+				}
+				p.col-center {
+					color: white;
+					padding-left: 10px;
+					text-align: center;
+				}
+				.white {
+					color: white;
+				}
+				.row {
+					display: inline-block;
+					margin-top: 2px;
+				    padding-top: 2px;
+				    color: black;
+				}
+				/*.rows {
+					/*border-top: #d0d0d0 1px solid;*/
+				    /*width: 98%;*/
+				    /*margin-left: 1%;*/
+				    /*margin-top: 5px;
+				    padding-top: 5px;
+				}*/
+				.card-header{
+					background: rgba(102, 175, 233, .6);
+					padding-left: .5em;
+				}
+				.recomendation {
+				    /*background: #3686d6;*/
+					border: #66afe9 1px solid;
+				    border-radius: 5px;
+				    width: 80%;
+				    display: block;
+				    margin: auto;
+				    margin-top: .5em;
+				    margin-bottom: 1em;
+				}
+				.result {
+					border: #66afe9 1px solid;
+					/*background: #3686d6;*/
+				    border-radius: 5px;
+				    width: 40%;
+				    display: inline-block;
+				    padding: 0;
+				    margin: 0.5%;
+				}
+				.title-tag {
+					background: rgba(102, 175, 233, .6);
+					text-align: left;
+				}
+				.p-text {
+					/*color: white;*/
+				    font-size: 16px;
+				    line-height: 1.5;
+				    letter-spacing: 0.5px;
+				    font-weight: bold;
+				}
+			</style>
+		</head>
+		<body>
+			<h1> <abbr>SC</abbr><bold>:</bold> evaluation <bold>S</bold>ervice for <bold>C</bold>ompatibility with screen readers</h1>
+			<p class="text-info"> {{_('Please enter an URL and select some evaluators to check page compatibility with screen readers.')}} </p>
+	    	{% block content %} {% endblock content %}
+		</body>
+		<footer>
+			<p class = "sizelitle"> {{_('by')}}: Polett Pizarro</p>
+			<p class = "sizelitle"> 2019</p>
+		</footer>
+	</html>
+
+

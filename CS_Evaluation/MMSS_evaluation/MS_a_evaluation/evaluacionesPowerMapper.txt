@@ -1,0 +1,58 @@
+verificar que <a> tenga titulo - 25%
+	 <a href='4567.html' title='this is a link title'>Click Here</a>
+	 tecnica h33
+verificar que <a> tenga aria-describedby - 25%
+	-el aria-describedby, corresponde a un id que debe estar en otro elemento (?)
+	<a href='4567.html' aria-describedby='a-aria-describedby-clickhere'>Click Here</a>
+    <span id='a-aria-describedby-clickhere'>this is an aria described by</span>
+    ARIA1
+verificar que <a> contiene solo una IMG con atributo alt - 0%
+	<a href='4567.html'><img src='1234.png' alt='this is a link alt'></a>
+	h30
+verificar que <a> contiene solo una IMG con atributo title - 0%
+	<a href='4567.html'><img src='1234.png' title='this is an image title'></a>
+	F89
+verificar si hay fieldset con <a>s - 50%
+	<fieldset>
+        <legend>Legend for enclosed links</legend>
+        <a href='/'>Home</a>
+        <a href='/about'>About</a>
+        <a href='/contact'>Contact</a>
+    </fieldset>
+	h91
+verificar si <a> tiene aria-label - 25%
+	<a href='4567.html' aria-label='this is an aria label'>Click Here</a>
+	ARIA7
+verificar si se define un <a> con placeholder y sin href o event handler - 25%
+	<a>Placeholder text</a>
+	- /
+verificar si <a> tiene onclick pero no href - 75%
+	<a onclick='alert(&apos;hello&apos;);'>Hello</a>
+	-f42
+verificar si <a> tiene TITLE y contiene solo una imagen (IMG) sin Alt - 25%
+	<a href='4567.html' title='this is a link title'><img src='1234.png'></a>
+	-f89
+verificar si <a> tiene aria-labelledby y contiene solo una imagen (IMG) sin alt - 50%
+	<a href='4567.html' aria-labelledby='a-aria-labelledby-span'><img src='1234.png'></a>
+    <span id='a-aria-labelledby-span'>this is an aria labelled by</span>
+    -f89Preceding
+vericar si <a> tiene label vacio (<a>null</a>) - 75%
+	<p> content</p>
+    <a href='javascript:void(0);'></a>
+    -F89
+verificar si <a> tiene aria-label y contiene solo una imagen (img) sin alt - 25%
+	<a href='4567.html' aria-label='this is an aria label'><img src='1234.png'></a>
+	-aria8 / f89
+si <a> se abre en una nueva ventana por un TARGET - 100%
+	<a href='http://www.example.com' target='_blank'>Example</a> 
+	-f22
+si <a> contiene solo una imagen con alt nulo - 100%
+	<a href='4567.html'><img src='1234.png' alt=''></a>
+	-f89
+si <a> contiene solo una imagen sin alt - 100%
+	<a href='4567.html'><img src='1234.png'></a>
+	-f65 / f89
+si <a> tiene como etiqueta un espacio - 100%
+	<p>Preceding content</p>
+	<a href='javascript:void(0);'> </a>
+	-f89

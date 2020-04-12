@@ -1,0 +1,31 @@
+VIDEO con ARIA-LABEL attribute - 100%
+     <video aria-label='Video aria label'>
+        <source type='video/mp4' src='small.mp4'></source>
+    </video>
+    -t: aria6 
+
+VIDEO con ARIA-LABELLEDBY attribute - 100%
+    <video aria-labelledby='video-aria-labelledby-id'>
+        <source type='video/mp4' src='small.mp4'></source>
+    </video>
+    <p id='video-aria-labelledby-id' style='display:none'>This is ARIA-LABELLEDBY text</p>
+    -t: aria10
+
+VIDEO con TITLE attribute - 100%
+    <video title='Video title'>
+        <source type='video/mp4' src='small.mp4'></source>
+    </video>
+    -///
+
+VIDEO con fallback content - 100%
+     <video>
+        <source type='video/mp4' src='small.mp4'></source>
+        fallback content
+    </video>
+    -/// 
+
+VIDEO sin description - 100%
+    <video>
+        <source type='video/mp4' src='small.mp4'></source>
+    </video>
+    -///

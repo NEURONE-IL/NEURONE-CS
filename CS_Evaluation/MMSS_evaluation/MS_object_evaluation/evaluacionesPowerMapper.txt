@@ -1,0 +1,31 @@
+OBJECT con ARIA-LABEL attribute - 100%
+    <object aria-label='ARIA label for object' data='startstop_movieclips.swf' type='application/x-shockwave-flash'>
+    </object>
+    -t: aria6 / w: f30 -a
+
+OBJECT con ARIA-LABELLEDBY attribute - 100%
+    <object aria-labelledby='object-aria-labelledby-id' data='startstop_movieclips.swf' type='application/x-shockwave-flash'>
+    </object>
+    <p id='object-aria-labelledby-id' style='display:none'>This is ARIA-LABELLEDBY text</p>
+    -t:aria10 / w: f30 -a
+
+OBJECT con fallback content - 75%
+    <object data='startstop_movieclips.swf' type='application/x-shockwave-flash'>
+        <p>Fallback content for object</p>
+    </object>
+    -t: h53 / w: f30 -a
+
+OBJECT con ALT attribute - 100%
+    <object alt='Alt text for object' data='startstop_movieclips.swf' type='application/x-shockwave-flash'>
+    </object>
+    -w: f30 -a 
+
+OBJECT con TITLE attribute - 100%
+    <object title='Title for object' data='startstop_movieclips.swf' type='application/x-shockwave-flash'>
+    </object>
+    -w: f30 -a 
+
+OBJECT sin description - 100%
+    <object data='startstop_movieclips.swf' type='application/x-shockwave-flash'>
+    </object>
+    -w: f30 -a 

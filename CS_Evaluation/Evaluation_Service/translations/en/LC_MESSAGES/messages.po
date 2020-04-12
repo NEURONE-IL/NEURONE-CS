@@ -1,0 +1,97 @@
+# English translations for CS - Compatibility Service.
+# Copyright (C) 2019 Polett Pizarro
+# This file is distributed under the same license as the CS - Compatibility
+# Service project.
+# Polett Pizarro <polett.pizarro.p@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  1.0\n"
+"Report-Msgid-Bugs-To: polett.pizarro.p@gmail.com\n"
+"POT-Creation-Date: 2019-10-26 06:00-0300\n"
+"PO-Revision-Date: 2019-10-26 06:07-0300\n"
+"Last-Translator: Polett Pizarro <polett.pizarro.p@gmail.com>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: forms.py:7
+msgid "Enter URL corresponding to the content: "
+msgstr "Enter URL corresponding to the content: "
+
+#: forms.py:10
+msgid "Please, indicate a url."
+msgstr "Please, indicate a url."
+
+#: forms.py:11
+msgid "Please, enter a valid value (it must be a URL)."
+msgstr "Please enter a valid value (it must be a URL)."
+
+#: Template/base.html:141
+msgid "Please enter an URL and select some evaluators to check page compatibility with screen readers."
+msgstr "Please enter an URL and select some evaluators to check page compatibility with screen readers."
+
+#: Template/base.html:145
+msgid "by"
+msgstr "By"
+
+#: Template/error.html:6
+msgid "A problem has occurred."
+msgstr "A problem has occurred."
+
+#: Template/error.html:7
+msgid "Please, try again."
+msgstr "Please try again."
+
+#: Template/error.html:12 Template/result.html:25
+msgid "Go Back"
+msgstr "Go Back"
+
+#: Template/index.html:27
+msgid "Send"
+msgstr "Send"
+
+#: Template/recomendations.html:9
+msgid "TAG"
+msgstr "TAG"
+
+#: Template/recomendations.html:15
+msgid "Element"
+msgstr "Element"
+
+#: Template/recomendations.html:20
+msgid "Recomendation"
+msgstr "Recomendation"
+
+#: Template/recomendations.html:31
+msgid "Home"
+msgstr "Home"
+
+#: Template/result.html:8
+msgid "TOTAL PERCENTAGE OF TAGS FAILED"
+msgstr "TOTAL PERCENTAGE OF TAGS FAILED"
+
+#: Template/result.html:10
+msgid "TOTAL AMOUNT OF TAGS IN THE CONTENT"
+msgstr "TOTAL AMOUNT OF TAGS IN THE CONTENT"
+
+#: Template/result.html:16
+msgid "Count in content"
+msgstr "Count in content"
+
+#: Template/result.html:17
+msgid "With incompatible definitions"
+msgstr "With incompatible definitions"
+
+#: Template/result.html:18
+msgid "Failure percentage"
+msgstr "Failure percentage"
+
+#: Template/result.html:30
+msgid "Recomendations"
+msgstr "Recomendations"
+

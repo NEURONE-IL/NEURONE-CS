@@ -1,0 +1,134 @@
+* {
+	font-family: 'Raleway', sans-serif;
+	color: #222221;
+	font-size: 1em;
+	font-weight: 100;
+	margin: 0%;
+	font-weight: bold;
+}
+
+abbr, bold {
+	color: rgb(163, 207, 242); /*<-rgba(102, 175, 233, .6) ;*/
+}
+
+cant-tags {
+    margin-bottom: 1rem;
+}
+
+footer {
+	float: bottom;
+	display: inline-block;
+	clear: both;
+    margin-bottom : 1%;
+	margin:auto;
+	width: 100%;
+
+}
+
+h1 {
+	text-align : center;
+	font-size: 2em;
+	border-radius: 0px 0px 4px 4px;
+	margin: 0%;
+	padding: 1% 12% 1% 12%;
+	background-color: #222221;
+	color:#F4FBFB;
+}
+
+h2 {
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 2;
+}
+
+.btn-center {
+	text-align: center;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.btn-success {
+	color: rgb(255,255,255);
+	font-size: 1.2em;
+	height: 2em;
+	width: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: rgb(55,198,245);
+	border-radius: 4px;
+	border-color:rgb(54,134,214);
+	margin-bottom: 2%;
+}
+
+.btn-success.focus,
+.btn-success:focus {
+	color:rgb(255,255,255);
+	background-color:rgba(54,134,214,.8);
+	border-color:rgb(54,134,214)
+}
+
+.btn-success:hover { 
+	color:rgb(255,255,255);
+	background-color:rgba(54,134,214,.8);
+	border-color:rgb(55,198,245);
+}
+
+.col {
+	width: 20%;
+	display: inline-block;
+}
+
+.form-control {
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 3%;
+	width:80%;
+	height:1em;
+	padding:1% 2%;
+	font-size:1.5em;
+	color: #222221;
+	background-color:rgb(255,255,255);
+	border:1px solid rgb(54,134,214);
+	border-radius: 4px;
+}
+
+.form-control:focus {
+	outline:0;
+	box-shadow: 0px 0px 5px 2px rgba(55,198,245,.8);
+}
+
+.pad-20 {
+	padding-left: 20%;
+	margin-top: 2%;
+}
+
+.p-text {
+    
+}
+
+.result {
+
+}
+
+.results {
+    text-align: center;
+    margin: 0 10% 1rem;
+    padding: 1rem 0%;
+    border: solid 2px #222221;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.sizelitle {
+	font-size: .5em;
+	text-align:  center;
+}
+
+#urlForm {
+	border-radius: 0px 0px 10px 10px;
+	padding-top: 1%;
+	border: rgb(55,198,245) 2px solid;
+	margin-left: 15%;
+	margin-right: 15%;
+}

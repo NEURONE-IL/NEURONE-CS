@@ -1,0 +1,61 @@
+CSS stylesheet link con `media=aural` - 100%
+    <style>
+        div.aural-link-fail
+        {
+            display: block;
+            color: black;
+            background-color: red;
+        }
+
+        div.aural-link-pass
+        {
+            display: none;
+            color: black;
+            background-color: green;
+        }
+    </style>
+
+    <link href='aural.css' rel='stylesheet' media='aural'>
+    <-- aural.css contains
+    div.aural-link-fail { display: none; }
+    div.aural-link-pass { display: block; }
+    -->
+
+    <div class='aural-link-fail'>
+        Aural Media Link - Fail
+    </div>
+    <div class='aural-link-pass'>
+        Aural Media Link - Pass
+    </div>
+    -///
+
+CSS stylesheet link con `media=speech` - 100%
+    <style>
+        div.speech-link-fail
+        {
+            display: block;
+            color: black;
+            background-color: red;
+        }
+
+        div.speech-link-pass
+        {
+            display: none;
+            color: black;
+            background-color: green;
+        }
+    </style>
+
+    <link href='speech.css' rel='stylesheet' media='speech'>
+    <-- speech.css contains
+    div.speech-link-fail { display: none; }
+    div.speech-link-pass { display: block; }        
+    -->
+
+    <div class='speech-link-fail'>
+        Speech Media Link - Fail
+    </div>
+    <div class='speech-link-pass'>
+        Speech Media Link - Pass
+    </div>  
+    -///      

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+	{% block content %}
+
+		<div class="results">
+			<h2> {{_('A problem has occurred.')}}</h2>
+			<h2>{{_('Please, try again.')}}</h2>
+        </div>
+
+        <form method="GET" action="/error">
+	        <div class="btn-center" id="success">
+				<button type="submit" class="btn-success"> {{_('Go Back')}} </button>
+			</div>
+		</form>
+
+	{% endblock %}

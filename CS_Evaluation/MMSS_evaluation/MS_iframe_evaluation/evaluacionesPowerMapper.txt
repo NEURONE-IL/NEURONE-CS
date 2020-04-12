@@ -1,0 +1,21 @@
+IFRAME con fallback content - 25%
+    -<iframe src='1234.html' width='400' height='100'>
+        This is iframe text
+    </iframe>
+    -t: h64
+
+`iframe` con `title` attribute - 25%
+    <iframe title='This is an IFRAME title' src='1234.html' width='400' height='100'> </iframe>
+    -t: h64
+
+IFRAME con blank title - 25%
+    <iframe title='' src='1234.html' width='400' height='100'> </iframe>
+    -w: 2.4.1 -a
+
+IFRAME sin alt content y no title - 25%
+    <iframe src='1234.html' width='400' height='100'> </iframe>
+    -w: 2.4.1 -a
+
+IFRAME con title matching frame filename - 50%
+    <iframe title='1234.html' src='1234.html' width='400' height='100'> </iframe>
+    -t: f30 /w:2.4.1 -a

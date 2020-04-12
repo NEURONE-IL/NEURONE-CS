@@ -1,0 +1,340 @@
+ok*Data table con CAPTION y TH - 25%
+  <table>
+          <caption>Data table caption</caption>
+          <tbody>
+            <tr>
+              <th>Morning</th>
+              <th>Afternoon</th>
+            </tr>
+            <tr>
+              <td>Free</td>
+              <td>Busy</td>
+            </tr>
+          </tbody>
+        </table>
+    
+ok Data table con SUMMARY y TH - 25%
+    <table summary='Data table summary'>
+      <tbody>
+        <tr>
+          <th>Morning</th>
+          <th>Afternoon</th>
+        </tr>
+        <tr>
+          <td>Free</td>
+          <td>Busy</td>
+        </tr>
+      </tbody>
+    </table>
+    -t: h73 / w: f91 -a
+
+okData table con TD HEADERS attribute - 50%
+    <table>
+    <tr>
+        <th rowspan='2' id='h'>Homework</th>
+        <th colspan='3' id='e'>Exams</th>
+        <th colspan='3' id='p'>Projects</th>
+    </tr>
+    <tr>
+        <th id='e1' headers='e'>1</th>
+        <th id='e2' headers='e'>2</th>
+        <th id='ef' headers='e'>Final</th>
+        <th id='p1' headers='p'>1</th>
+        <th id='p2' headers='p'>2</th>
+        <th id='pf' headers='p'>Final</th>
+    </tr>
+    <tr>
+        <td headers='h'>15%</td>
+        <td headers='e e1'>15%</td>
+        <td headers='e e2'>15%</td>
+        <td headers='e ef'>20%</td>
+        <td headers='p p1'>10%</td>
+        <td headers='p p2'>10%</td>
+        <td headers='p pf'>15%</td>
+    </tr>
+    </table>
+    -t: h43
+
+ok Data table con TH cell headers - 25%
+    <table>
+      <tbody>
+        <tr>
+          <th>Morning</th>
+          <th>Afternoon</th>
+        </tr>
+        <tr>
+          <td>Free</td>
+          <td>Busy</td>
+        </tr>
+      </tbody>
+    </table>
+    -t: h51 / w: f91 -a
+
+ok Data table con TH row/columns headers con SCOPE - 75%
+    <table border='1'>
+    <caption>Contact Information</caption>
+    <tr>
+        <td></td>
+        <th scope='col'>Name</th>
+        <th scope='col'>Phone#</th>
+        <th scope='col'>Fax#</th>
+        <th scope='col'>City</th>
+    </tr><tr>
+        <td>1.</td>
+        <th scope='row'>Joel Garner</th>
+        <td>412-212-5421</td>
+        <td>412-212-5400</td>
+        <td>Pittsburgh</td>
+    </tr><tr>
+        <td>2.</td>
+        <th scope='row'>Clive Lloyd</th>
+        <td>410-306-1420</td>
+        <td>410-306-5400</td>
+        <td>Baltimore</td>
+    </tr><tr>
+        <td>3.</td>
+        <th scope='row'>Gordon Greenidge</th>
+        <td>281-564-6720</td>
+        <td>281-511-6600</td>
+        <td>Houston</td>
+    </tr>
+    </table>
+    -t: h63
+
+ok Data table con role columnheader headers but no TH	 - 75%
+    <table>
+    <tbody role='rowgroup'>
+        <tr role='row'>
+        <td class='col1' role='columnheader'>Morning</td>
+        <td class='col1' role='columnheader'>Afternoon</td>
+        </tr>
+        <tr role='row'>
+        <td>Free</td>
+        <td>Busy</td>
+        </tr>
+    </tbody>
+    </table>
+    -w: f91 -a
+
+ok Data table con role grid - 25%
+    <table role='grid'>
+      <tbody>
+        <tr>
+          <th><strong>Morning</strong></th>
+          <th><strong>Afternoon</strong></th>
+        </tr>
+        <tr>
+          <td>Free</td>
+          <td>Busy</td>
+        </tr>
+      </tbody>
+    </table> 
+    -///
+
+ok Layout table con role presentation - 25%
+    <table role='presentation'>
+      <tbody>
+        <tr>
+          <td><strong>Example</strong></td>
+          <td><strong>Navigation</strong></td>
+        </tr>
+        <tr>
+          <td>Links</td>
+          <td>Content</td>
+        </tr>
+      </tbody>
+    </table>
+    -w: f91 -a
+
+ok Layout table con single cell - 25%
+    <table>
+      <tbody>
+        <tr>
+          <td>This is some text</td>
+        </tr>
+      </tbody>
+    </table>
+    -https://www.powermapper.com/products/sortsite/rules/accwcag1-5.1.1/    
+
+*ok Data table con CAPTION but no TH - 100%
+    <table>
+      <caption>Data table caption</caption>
+      <tbody>
+        <tr>
+          <td><strong>Morning</strong></td>
+          <td><strong>Afternoon</strong></td>
+        </tr>
+        <tr>
+          <td>Free</td>
+          <td>Busy</td>
+        </tr>
+      </tbody>
+    </table>
+    -https://www.powermapper.com/products/sortsite/rules/accwcag1-5.1.1/   
+
+ok Data table con SUMMARY but no TH - 100%
+    <table summary='Data table summary'>
+      <tbody>
+        <tr>
+          <td><strong>Morning</strong></td>
+          <td><strong>Afternoon</strong></td>
+        </tr>
+        <tr>
+          <td>Free</td>
+          <td>Busy</td>
+        </tr>
+      </tbody>
+    </table>
+    -https://www.powermapper.com/products/sortsite/rules/accwcag1-5.1.1/
+
+ok Data table con TH row/columns headers without SCOPE - 75% ej: <th scope='col'>Name</th>
+    <table border='1'>
+    <caption>Contact Information</caption>
+    <tr>
+        <td></td>
+        <th>Name</th>
+        <th>Phone#</th>
+        <th>Fax#</th>
+        <th>City</th>
+    </tr><tr>
+        <td>1.</td>
+        <th>Joel Garner</th>
+        <td>412-212-5421</td>
+        <td>412-212-5400</td>
+        <td>Pittsburgh</td>
+    </tr><tr>
+        <td>2.</td>
+        <th>Clive Lloyd</th>
+        <td>410-306-1420</td>
+        <td>410-306-5400</td>
+        <td>Baltimore</td>
+    </tr><tr>
+        <td>3.</td>
+        <th>Gordon Greenidge</th>
+        <td>281-564-6720</td>
+        <td>281-511-6600</td>
+        <td>Houston</td>
+    </tr>
+    </table>
+    -w: 1.3.1 
+
+ok Data table con THEAD, TFOOT but no TH - 75%
+    <table>
+      <thead>
+        <tr>
+          <td><strong>Morning</strong></td>
+          <td><strong>Afternoon</strong></td>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>9am to 12pm</td>
+          <td>2pm to 5pm</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Free</td>
+          <td>Busy</td>
+        </tr>
+      </tbody>
+    </table>
+    -https://www.powermapper.com/products/sortsite/rules/accwcag1-5.1.1/
+
+ok Data table sin TH elements - 100%
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Morning</strong></td>
+          <td><strong>Afternoon</strong></td>
+        </tr>
+        <tr>
+          <td>Free</td>
+          <td>Busy</td>
+        </tr>
+      </tbody>
+    </table>
+    -w:f91 / https://www.powermapper.com/products/sortsite/rules/accwcag1-5.1.1/
+
+ok Data table con null SUMMARY but no TH - 100%
+    <table summary=''>
+      <tbody>
+        <tr>
+          <td><strong>Morning</strong></td>
+          <td><strong>Afternoon</strong></td>
+        </tr>
+        <tr>
+          <td>Free</td>
+          <td>Busy</td>
+        </tr>
+      </tbody>
+    </table>
+    -https://www.powermapper.com/products/sortsite/rules/accwcag1-5.1.1/
+
+ok Data table con role note - 100%
+    <table role='note'>
+      <tbody>
+        <tr>
+          <th><strong>Morning</strong></th>
+          <th><strong>Afternoon</strong></th>
+        </tr>
+        <tr>
+          <td>Free</td>
+          <td>Busy</td>
+        </tr>
+      </tbody>
+    </table>
+    -///
+
+ok Data table con role presentation - 100%
+    <table role='presentation'>
+      <tbody>
+        <tr>
+          <th><strong>Morning</strong></th>
+          <th><strong>Afternoon</strong></th>
+        </tr>
+        <tr>
+          <td>Free</td>
+          <td>Busy</td>
+        </tr>
+      </tbody>
+    </table>
+    -f92 / https://www.powermapper.com/products/sortsite/rules/accwcag2-f92-1/
+
+tbody
+ok *Data table con role columnheader headers but no TH  - 75%
+
+
+td
+ok *Data table con TD HEADERS attribute - 50%
+ok *Data table con role columnheader headers but no TH  - 75%
+ok *Layout table con role presentation - 25%
+ok *Layout table con single cell - 25%
+
+
+tfoot
+ok *Data table con THEAD, TFOOT but no TH - 75%
+
+
+th
+ok *Data table con CAPTION y TH - 25%
+ok *Data table con SUMMARY y TH - 25%
+ok*Data table con TD HEADERS attribute - 50%
+ok*Data table con TH cell headers - 25%
+ok*Data table con TH row/columns headers con SCOPE - 75%
+ok *Data table con role grid - 25%
+ok *Data table con CAPTION but no TH - 100%
+ok *Data table con SUMMARY but no TH - 100%
+ok *Data table con TH row/columns headers without SCOPE - 75%
+ok *Data table sin TH elements - 100%
+ok *Data table con null SUMMARY but no TH - 100%
+ok *Data table con role note - 100%
+ok *Data table con role presentation - 100%
+
+
+thead
+ok *Data table con THEAD, TFOOT but no TH - 75%
+
+
+tr
+ok *Data table con role columnheader headers but no TH - 75%

@@ -1,0 +1,36 @@
+# English translations for CS - Compatibility Service.
+# Copyright (C) 2019 Polett Pizarro
+# This file is distributed under the same license as the CS - Compatibility Service project.
+# Polett Pizarro <polett.pizarro.p@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: polett.pizarro.p@gmail.com\n"
+"POT-Creation-Date: 2019-10-26 01:31-0300\n"
+"PO-Revision-Date: 2019-10-26 01:31-0300\n"
+"Last-Translator: Polett Pizarro <polett.pizarro.p@gmail.com>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: main.py:38
+msgid "No se detectaron incompatibilidades correspondientes a este tag."
+msgstr "No incompatibilities corresponding to this tag were detected."
+
+#: main.py:40
+msgid "Se recomienda agregar un título a la etiqueta a."
+msgstr "It is recommended to add a title to the label a."
+
+#: main.py:42
+msgid "Se recomienda que el label sea un texto."
+msgstr "It is recommended that the label be a text."
+
+#: main.py:44
+msgid "Se recomienda cambiar el uso de Target por Href u onClick."
+msgstr "It is recommended to change the use of Target by Href or onClick."
+

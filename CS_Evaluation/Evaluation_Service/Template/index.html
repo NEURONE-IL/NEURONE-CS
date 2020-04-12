@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	{% from "_macro.html" import render_field %}
+		<form id="urlForm" method="POST">
+			<div class="btn-center">
+				{{ render_field( form.url, class = 'form-control') }}
+				<p class="help-block text-danger"></p>
+			</div>
+			<!--div class="pad-20">
+				<label>Seleccione tipo de informe:</label>
+					<input type="radio" name="format" value="1"> Json
+					<input type="radio" name="format" value="0"> Html
+			</div-->
+			<br>
+			<div class="pad-20" >
+              	{% for o in option_list %}
+          			<div class = "col">
+          				<input class="checkbox" type="checkbox" name="{{ o[1] }}" value = "true">
+          				<div class="checkbox"> {{ o[1] }} </div>
+          			</div>
+               	{%endfor%}
+            </div>
+			<br>
+			<div class="btn-center" id="success">
+				<button type="submit" class="btn-success"> {{_('Send')}} </button>
+			</div>
+		</form>
+		<br>
+
+{% endblock %}

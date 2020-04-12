@@ -1,0 +1,141 @@
+  for table in tables:
+    #validations in table tag:
+    tableRole = table.get('role')
+    tableSummary = table.get('summary')
+    tHead = table.get('thead')
+    tFoot = table.get('tfoot')
+
+    tableCaption = False
+    tdHeaders = False
+  ???Th = False
+    thInTrScope = False
+    tableTHead = False
+    tableTFoot = False
+
+    #find NextTag
+    tableNext = table.findNext()
+    tableNextBS = BeautifulSoup(str(tableNext), 'lxml')
+
+    nextCaption = tableNextBS.find('caption')
+    nextTrs = tableNextBS.find_all('tr')  #hay varios tr. Así que iterar sobre ellos.
+    nextTds = tableNextBS.find_all('td')
+    nextThs = tableNextBS.find_all('th')
+    
+    tdsQuantity = len(nextTds)
+    thsQuantity = len(nextThs)
+
+    thAttrScope = ""
+    tdAttrRole = ""
+    tdAttrHeader = ""
+    
+    for tr in nextTrs: #<table><tr/><tr/>...</table>
+        trNext = tr.findNext()
+        trNextBS = BeautifulSoup(str(trNext), 'lxml')
+        
+        trNextTh = trNextBS.find('th')
+        trNextTd = trNextBS.find('td')
+
+        if ((trNextTh != None) and (trNext.parent.name == "tr")):  # Si existe un th y esta dentro de la seccion (tr)
+          thAttrScope = trNextTh.get('scope')
+            if (thAttrScope!= None and thAttrScope!= ''):
+                thInTrScope=True;
+
+        if ((trNextTd != None) and (trNext.parent.name == "tr")):  # Si existe un td y esta dentro de la seccion (tr)
+            tdAttrRole = trNextTd.get('role');
+            tdAttrHeader = trNextTd.get('headers');
+            if (tdAttrHeader!= None and ):
+                tdHeaders=True;
+
+    if (tHead != None):
+        tableTHead=True;
+
+    if (tFoot != None):
+        tableTFoot=True;
+
+        #de caption
+        #((nextCaption != None) and (tableNext.parent.name == "table")): #Si existe un caption y esta dentro de la tabla.
+        #tableCaption= True
+        #Busco siguiente Tag:
+        #tableNext = table.findNext() #Si había caption debo moverme a la siguiente tag, si no, validar el siguiente tipo de tag.
+    
+
+    #Realizar Evaluaciones y Calcular Puntaje:
+
+    #ok Data table con role presentation - 100%
+    #ok Data table con role note - 100%
+    if (tableRole=="presentation" or tableRole=="note"):
+      score+= 100
+    
+
+    #ok Data table con CAPTION but no TH - 100%
+    elif (nextCaption and tableNext.parent.name == "table" and thsQuantity==0)
+      #elif(tableCaption!=None and tableCaption!= '' and Th== False):
+      score+= 100
+
+    #ok Data table con SUMMARY but no TH - 100%
+    #ok Data table con null SUMMARY but no TH - 100%
+    elif ((tableSummary or tableSummary== '') and thsQuantity==0):
+      score+= 100
+
+    #ok Data table sin TH elements - 100%
+    elif (thsQuantity==0):
+      score += 100
+
+    #ok Data table con THEAD, TFOOT but no TH - 75%
+    if(tHead and tFoot and thsQuantity==0):
+        score += 75
+
+    # ok Data table con role columnheader headers but no TH - 75%
+    elif (tdAttrRole == "columnheader" and thsQuantity==0):
+        score += 75
+
+#Pendiente! Data table con TH row/columns headers without SCOPE - 75%
+    elif(thInTrScope and thsQuantity==0):
+        score+= 75
+# Data table con TH row/columns headers con SCOPE - 75%
+    elif (nextTrs):
+      thWithScope = True
+      for tr in nextTrs: 
+        trNext = tr.findNext()
+        trNextBS = BeautifulSoup(str(tr), 'lxml')
+        trNextThs = tableNextBS.find_all('th')
+          for th in trNextThs:
+            thScope = table.get('scope')
+            if (not thScope):
+              thWithScope = False
+      if (thWithScope):
+        good += 1
+      else:
+        flag = 1
+        typeError = 3
+
+# pendiente! tiene que ser con for.  Data table con TD HEADERS attribute - 50%
+    elif (tdHeaders):
+        score += 50
+
+# pendiente! ver que dentro del primer tr todos los de adentro sean th. Data table con TH cell headers - 25%
+    elif (Th):
+      score += 25
+
+    #ok Data table con role grid - 25%
+    elif (tableRole == "grid"):
+      score += 25
+
+    #ok Layout table con role presentation - 25%
+    elif (tableRole == "presentation"):
+        score += 25
+
+# pendiente! verificar que tr sea solo 1 y td solo 1. Layout table con single cell - 25%
+    elif (tdsQuantity == 1):
+        score += 25
+
+    #ok Data table con CAPTION y TH - 25%
+    elif (thsQuantity==0 and tableCaption):
+      score += 25
+    
+    #ok Data table con SUMMARY y TH - 25%
+    elif (thsQuantity==0 and tableSummary):
+        score += 25
+
+  #CALCULO PUNTAJE FINAL. PROMEDIO SIMPLE?
+  evaluation= score/totalQuantity

@@ -1,0 +1,27 @@
+# Translations template for CS - Compatibility Service.
+# Copyright (C) 2019 Polett Pizarro
+# This file is distributed under the same license as the CS - Compatibility Service project.
+# Polett Pizarro <polett.pizarro.p@gmail.com>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: polett.pizarro.p@gmail.com\n"
+"POT-Creation-Date: 2019-10-26 05:29-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Polett Pizarro <polett.pizarro.p@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: main.py:34
+msgid "No se detectaron incompatibilidades correspondientes a este tag."
+msgstr ""
+
+#: main.py:36
+msgid "Se recomienda no utilizar el atributo 'media' definido como 'aural' o 'speech'."
+msgstr ""
+

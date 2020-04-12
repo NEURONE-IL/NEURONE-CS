@@ -1,0 +1,27 @@
+EMBED con ARIA-LABEL attribute	- 75%
+    <embed aria-label='ARIA label for embed' type='video/mp4' src='small.mp4' width='100' height='100'></embed>
+    -aria6/h35
+
+EMBED con ARIA-LABELLEDBY attribute - 100%
+    <embed aria-labelledby='embed-aria-labelledby-id' type='video/mp4' src='small.mp4' width='100' height='100'></embed>
+    <p id='embed-aria-labelledby-id' style='display:none'>This is ARIA-LABELLEDBY text</p>
+    -aria10 / h35
+
+`embed` inside `figure` con `figcaption` - 25%
+    <figure>
+        <embed type='video/mp4' src='small.mp4' width='100' height='100'></embed>
+        <figcaption>Figure caption for embed</figcaption>
+    </figure>
+    -h35
+
+EMBED con ALT attribute - 100%
+    <embed alt='Alt text for embed' type='video/mp4' src='small.mp4' width='100' height='100'></embed>
+    -h35
+
+EMBED con TITLE attribute - 100%
+    <embed title='Title text for embed' type='video/mp4' src='small.mp4' width='100' height='100'></embed>
+    -h35
+
+EMBED sin description - 100%
+     <embed type='video/mp4' src='small.mp4' width='100' height='100'></embed>
+     -h35

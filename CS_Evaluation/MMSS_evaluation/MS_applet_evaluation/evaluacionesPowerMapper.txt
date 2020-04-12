@@ -1,0 +1,40 @@
+verificar si <applet> tiene atributo aria-label - 75%
+	<applet code='appletComponentArch.DynamicTreeApplet' aria-label='ARIA label for applet' archive='https://docs.oracle.com/javase/tutorial/deployment/applet/examples/dist/applet_ComponentArch_DynamicTreeDemo/DynamicTreeDemo.jar' width='300' height='300'>
+        <param name='permissions' value='sandbox'></param>
+    </applet>
+    -aria6 / h35
+verificar si <applet> tiene contenido alternativo - 50%	
+	<applet code='appletComponentArch.DynamicTreeApplet' archive='https://docs.oracle.com/javase/tutorial/deployment/applet/examples/dist/applet_ComponentArch_DynamicTreeDemo/DynamicTreeDemo.jar' width='300' height='300'>
+	    <param name='permissions' value='sandbox'></param>
+	    Fallback content for applet
+	</applet>
+	-h35
+verificar si <applet> esta dentro de un <figure>, junto con <figcaption> - 25%
+	<figure>
+        <applet code='appletComponentArch.DynamicTreeApplet' archive='https://docs.oracle.com/javase/tutorial/deployment/applet/examples/dist/applet_ComponentArch_DynamicTreeDemo/DynamicTreeDemo.jar' width='300' height='300'>
+            <param name='permissions' value='sandbox'></param>
+        </applet>
+        <figcaption>Figure caption for applet</figcaption>
+    </figure>
+    -h35
+si <applet> tiene atributo aria-labelledby - 100%
+	<applet code='appletComponentArch.DynamicTreeApplet' aria-labelledby='applet-aria-labelledby-id' archive='https://docs.oracle.com/javase/tutorial/deployment/applet/examples/dist/applet_ComponentArch_DynamicTreeDemo/DynamicTreeDemo.jar' width='300' height='300'>
+        <param name='permissions' value='sandbox'></param>
+    </applet>
+    <p id='applet-aria-labelledby-id' style='display:none'>This is ARIA-LABELLEDBY text</p>
+	-aria10 / h35
+si <applet> con atributo alt - 100%
+	<applet code='appletComponentArch.DynamicTreeApplet' alt='Alt text for applet' archive='https://docs.oracle.com/javase/tutorial/deployment/applet/examples/dist/applet_ComponentArch_DynamicTreeDemo/DynamicTreeDemo.jar' width='300' height='300'>
+        <param name='permissions' value='sandbox'></param>
+    </applet>
+    -h35
+si <applet> con atributo title - 100%
+	<applet code='appletComponentArch.DynamicTreeApplet' title='Title text for applet' archive='https://docs.oracle.com/javase/tutorial/deployment/applet/examples/dist/applet_ComponentArch_DynamicTreeDemo/DynamicTreeDemo.jar' width='300' height='300'>
+        <param name='permissions' value='sandbox'></param>
+    </applet>
+    -h35
+si <applet> sin descripcion - 100%
+	<applet code='appletComponentArch.DynamicTreeApplet' archive='https://docs.oracle.com/javase/tutorial/deployment/applet/examples/dist/applet_ComponentArch_DynamicTreeDemo/DynamicTreeDemo.jar' width='300' height='300'>
+        <param name='permissions' value='sandbox'></param>
+    </applet>
+    -h35'''

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+	{% block content %}
+
+		<div class="recomendations">
+			<h3> {{url}} </h3>
+          	{% for rec in recomendations %}
+      			<div class="recomendation card" >
+      				<h2 class="card-header"> {{_('TAG')}}: {{rec.tag}} </h2>
+  					{% for r in rec.recomendations %}
+	      				<div class="card-body">
+		      				<hr/>
+		      				{% if r.element %}
+			      				<div class="row">
+									<p class="col-left"> {{_('Element')}} : </p>
+									<p class="col-right"><code> {{r.element}} </code></p>
+			      				</div>
+			      			{% endif %}
+		      				<div class="row">
+								<p class="col-left"> {{_('Recomendation')}} : </p>
+								<p class="col-right"> {{r.recomendation}} </p>
+		      				</div>
+	      				</div>
+           			{% endfor %}
+      			</div>
+           	{%endfor%}
+        </div>
+	    <div class="btn-center">
+        	<form method="GET" action="/error">
+	        	<div class="btn-center" id="success">
+					<button type="submit" class="btn-success"> {{_('Home')}} </button>
+				</div>
+			</form>
+		</div>
+
+	{% endblock %}

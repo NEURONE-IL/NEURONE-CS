@@ -1,0 +1,6 @@
+*FIELDSET containing links - 50%
+*Yes/No radio buttons inside `fieldset` element - 25%
+*FIELDSET containing no controls - 25%
+*FIELDSET used to put border round text - 25%
+*FIELDSET con blunak LEGEND - 75%
+*FIELDSET sin LEGEND - 50%

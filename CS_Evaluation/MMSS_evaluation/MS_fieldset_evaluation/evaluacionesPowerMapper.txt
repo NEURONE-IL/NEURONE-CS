@@ -1,0 +1,60 @@
+*FIELDSET containing links - 50%
+    <fieldset>
+        <legend>Legend for enclosed links</legend>
+        <a href='/'>Home</a>
+        <a href='/about'>About</a>
+        <a href='/contact'>Contact</a>
+    </fieldset>
+    -h91
+
+Yes/No radio buttons inside `fieldset` element - 25%
+    <fieldset>
+        <legend>I agree to terms y conditions</legend>
+        <label><input name='radio_with_legend1' type='radio' checked='checked'>Yes</label>
+        <label><input name='radio_with_legend1' type='radio'>No</label>
+    </fieldset>
+    <fieldset>
+        <legend>Sign me up to the newsletter</legend>
+        <label><input name='radio_with_legend2' type='radio' checked='checked'>Yes</label>
+        <label><input name='radio_with_legend2' type='radio'>No</label>
+    </fieldset>
+    -t: h71
+
+FIELDSET containing no controls - 25%
+    <fieldset>
+        <legend>Legend but no controls</legend>
+    </fieldset>
+    -w: f43 -a
+
+FIELDSET used to put border round text - 25%
+    <fieldset>
+        <legend>Text Border</legend>
+        <p>This is some text with a border</p>
+    </fieldset>
+    -w: f43 -a
+
+FIELDSET con blank LEGEND - 75%
+    <fieldset>
+        <legend> </legend>
+        <label><input name='radio_blank_legend' type='radio' checked='checked'>Yes</label>
+        <label><input name='radio_blank_legend' type='radio'>No</label>
+    </fieldset>
+    -w: h71 -a
+
+FIELDSET sin LEGEND - 50%
+    <p>Close the window</p>
+    <fieldset>
+        <label><input name='radio_no_legend' type='radio' checked='checked'>Yes</label>
+        <label><input name='radio_no_legend' type='radio'>No</label>
+    </fieldset> 
+    -w: h71
+
+Yes/No radio buttons sin FIELDSET - 75%
+    I agree to terms y conditions:
+    <label><input name='radio_no_fieldset1' type='radio' checked='checked'>Yes</label>
+    <label><input name='radio_no_fieldset1' type='radio'>No</label>
+    <br>
+    Sign me up to the newsletter:
+    <label><input name='radio_no_fieldset2' type='radio' checked='checked'>Yes</label>
+    <label><input name='radio_no_fieldset2' type='radio'>No</label>
+    -//

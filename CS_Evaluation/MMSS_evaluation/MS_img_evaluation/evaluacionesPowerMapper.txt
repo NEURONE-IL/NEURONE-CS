@@ -1,0 +1,105 @@
+ok*A link contiene solo una *(IMG con ALT) - 0%
+ok*A link contiene solo una *(IMG con TITLE) - 0%
+ok*A link contiene solo una IMG con ALT null - 100%
+ok*A link contiene solo una IMG conout ALT - 100%
+ok*A link con TITLE contiene solo una IMG sin ALT - 25%
+ok*A link con aria-labelledby contiene solo una IMG sin ALT - 50%
+ok*AREA y *(IMG con ALT) attributes - 50%
+ok*AREA con ALT attribute y IMG con ALT null - 25%
+No afecta la imagen *AREA con TITLE attribute - 75% -> verifica uso de atributo usemap
+    <img src='1234.png' alt='this is alt text' usemap='#area_title_map1'>
+    <map id='area_title_map1' name='area_title_map1'>
+    <area title='this is left title text' coords='0,0,100,100' href='left_arrow.htm' target='frame1'></area>
+    <area title='this is right title text' coords='200,0,300,100' href='right_arrow.htm' target='frame1'></area>
+    </map>
+    -f65
+*AREA con aria-label attribute - 50%	X no aplica a este servicio
+*AREA con aria-labelledby attribute - 75%	X no aplica a este servicio
+*AREA sin ALT attribute - 100%			X no aplica a este servicio
+*AREA con ALT null attribute - 100%		X no aplica a este servicio
+
+ok*BUTTON contiene solo una IMG con TITLE attribute - 50%
+ok*BUTTON contiene solo una IMG con aria-label - 25%
+ok*BUTTON contiene solo una IMG con aria-labelledby - 50%
+ok*BUTTON con TITLE contiene solo una IMG con ALT null - 0%
+ok*BUTTON con aria-label contiene solo una IMG con ALT null - 25%
+ok*`button` element contiene solo una `img` con `alt` attribute - 25%
+ok*BUTTON contiene solo una IMG sin ALT - 100%
+ok *BUTTON contiene solo una IMG con ALT null attribute - 100%
+ok*BUTTON con TITLE contiene solo una IMG sin ALT - 25%
+ok*BUTTON con aria-label contiene solo una IMG sin ALT - 25%
+
+ok*Heading is IMG con ALT - 0%
+ok*Heading is IMG ALT="" - 100%
+ok*Heading is IMG ALT=filename - 100%
+ok*Heading is IMG sin ALT - 100%
+
+ok IMG con ALT - 0%
+    <img src='1234.png' alt='this is alt text'>
+    -t: h37 / w: f65 -a
+
+ok *IMG con FIGCAPTION - 50%
+ok IMG con TITLE - 0%
+    <img src='1234.png' title='this is title text'>
+    -w: f65 -a
+
+ok IMG con aria-label - 25%
+    <img src='1234.png' aria-label='this is an aria label'>
+    -t: aria6 / w: f65 -a
+
+ok IMG con aria-labelledby - 25%
+    <img src='1234.png' aria-labelledby='img_caption'>
+    <span id='img_caption'>this is an aria labelled by</span>
+    -t: aria10 / w: f65 -a
+
+ok IMG con atributo ALT null - 0%
+    <img src='1234.png' alt=''>
+    -t: h67
+
+no afecta la imagen *Definition lists con images as bullets - 100%
+ 
+ok IMG con aria-describedby - 100%
+    <img src='1234.png' aria-describedby='img-aria-describedby-code'>
+    <span id='img-aria-describedby-code'>this is an aria described by</span>
+    -w: f65 -a
+
+ok IMG con ALT null y non-null TITLE attributes - 100%
+    <img src='1234.png' alt='' title='This is the title attribute'>
+    -w: f39 -a
+
+ok IMG con ALT null y non-null aria-label attributes - 100%
+     <img src='1234.png' alt='' aria-label='This is the aria-label attribute'>
+    -w: f39 -a
+
+ok IMG con ALT null y non-null aria-labelledby attributes - 100%
+    <img src='1234.png' alt='' aria-labelledby='img-null-alt-aria-labelledby-id'>
+    <p id='img-null-alt-aria-labelledby-id'>This is the aria-labelledby</p>
+    -w: f39 -a
+
+ok IMG sin ALT attribute - 100%
+    <img src='1234.png'>
+    -w: f65 -a
+
+ok *(IMG con ALT) set to ASCII art smiley - 75%
+	<img src='img16x16.png' alt=':-)'>
+	-w: f72 -a
+
+ok *(IMG con ALT) set to SRC filename - 100%
+	<img src='1234.png' alt='1234.png'>
+	-t: f30
+
+ok IMG con server side image map - 100%
+    <a href='/mapper'><img src='image.gif' alt='Server site image map' ismap='ismap'></a>
+    -w: 2.1.1 -a
+
+ok *Image MAP sin NAME attribute - 50%
+	<img src='1234.png' alt='this is alt text' usemap='#area_alt_map1'>
+    <map id='area_alt_map1'>
+    <area alt='this is left alt text' coords='0,0,100,100' href='left_arrow.htm' target='frame1'></area>
+    <area alt='this is right alt text' coords='200,0,300,100' href='right_arrow.htm' target='frame1'></area>
+    </map>
+    -//
+
+ok *Link con `aria-label`, y contiene solo una `img` sin `alt` - 25%
+	<a href='4567.html' aria-label='this is an aria label'><img src='1234.png'></a>
+	-w: ARIA8

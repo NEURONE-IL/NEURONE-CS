@@ -1,0 +1,44 @@
+Heading is *(IMG con ALT) -0%
+    <h2><img src='1234.png' alt='Second level alt'></h2>
+    <p>Heading 2 content</p>
+    -w: g130 -aa
+
+Empty heading - 25%
+    <h1></h1>
+    <p>Empty heading content</p>
+    -w: g130 -aa
+
+Heading non-breaking spaces - 25%
+    <h1> </h1>
+    <p>Heading with only non-breaking spaces content</p>
+    -w: g130 -aa
+
+Heading only spaces -  25%
+    <h1> </h1>
+    <p>Heading with only spaces content</p>
+    -w: g130 -aa
+----
+Heading is IMG ALT="" - 100%
+    <h2><img src='1234.png' alt=''></h2>
+    <p>Heading 2 content</p>
+    -w: g130 -aa
+    
+Heading is IMG ALT=filename - 100%
+    <h2><img src='1234.png' alt='1234.png'></h2>
+    <p>Heading 2 content</p>
+    -w: f30 -a
+
+Heading is IMG sin ALT - 100%
+    <h2><img src='1234.png'></h2>
+    <p>Heading 2 content</p>
+    -w: g130 -aa
+
+Heading only punctuation - 100%
+    <h1>,,,,</h1>
+    <p>Heading with only silent punctuation content</p>
+    -w: g130 -aa
+
+Nested headings - 100%
+    <h2><h3>Third level heading</h3> Second level heading</h2>
+    <p>Second level content</p>
+    -w:1.3.1

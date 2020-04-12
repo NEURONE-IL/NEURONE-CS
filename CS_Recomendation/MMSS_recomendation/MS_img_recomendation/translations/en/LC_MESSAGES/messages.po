@@ -1,0 +1,45 @@
+# English translations for CS - Compatibility Service.
+# Copyright (C) 2019 Polett Pizarro
+# This file is distributed under the same license as the CS - Compatibility
+# Service project.
+# Polett Pizarro <polett.pizarro.p@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  1.0\n"
+"Report-Msgid-Bugs-To: polett.pizarro.p@gmail.com\n"
+"POT-Creation-Date: 2019-10-26 05:13-0300\n"
+"PO-Revision-Date: 2019-10-26 05:15-0300\n"
+"Last-Translator: Polett Pizarro <polett.pizarro.p@gmail.com>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: main.py:34
+msgid "No se detectaron incompatibilidades correspondientes a este tag."
+msgstr "No incompatibilities corresponding to this tag were detected."
+
+#: main.py:36
+msgid "Se recomienda agreguar una descripción escrita para la imagen, utilizando el atributo 'alt'."
+msgstr "It is recommended to add a written description for the image, using the 'alt' attribute."
+
+#: main.py:38
+msgid "Se recomienda corregir la descripción indicada en el atributo 'alt', no debe ser igual al nombre del archivo (atributo 'src')."
+msgstr "It is recommended to correct the description indicated in the attribute 'alt', it should not be equal to the name of the file (attribute 'src')."
+
+#: main.py:40
+msgid "Se recomienda no eliminar el tag de 'img' o 'dd', ya que al utilizarlos juntos no son compatibles para los lectores de pantalla."
+msgstr "It is recommended not to delete the 'img' or 'dd' tag, since when used together they are not compatible for screen readers."
+
+#: main.py:42
+msgid "Se recomienda no utilizar el atributo 'aria-describedby'. Ademas, asegurese de que la imagen contiene una descripción escrita utilizando el atributo 'alt'."
+msgstr "It is recommended not to use the attribute 'aria-describedby'. Also, make sure the image contains a description written using the 'alt' attribute."
+
+#: main.py:44
+msgid "Se recomiendo no utilizar el atributo 'isMap'. Puede probar utilizando el atributo 'map'."
+msgstr "It is recommended not to use the 'isMap' attribute. You can try using the 'map' attribute."
+

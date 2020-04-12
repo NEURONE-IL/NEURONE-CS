@@ -1,0 +1,96 @@
+INPUT type=image con ALT attribute - 0%
+    <input type='image' src='1234.png' alt='this is image button alt text'>
+    -t: h36 / w: f65 -a
+
+INPUT type=image con TITLE attribute - 25%
+    <input type='image' src='1234.png' title='this is image button title text'>
+    -t: f65/h91 / w: f65 -a
+
+`input type=image` con `aria-label` attribute - 25%
+    <input type='image' src='1234.png' aria-label='this is image button aria label text'>
+    -t: aria14 / w: f65 -a
+
+`input type=image` con `aria-labelledby` attribute - 25%
+    <input type='image' src='1234.png' aria-labelledby='input_img_aria_labelledby'>
+    <span id='input_img_aria_labelledby'>this is image button aria labelled by text</span>
+    -t: aria16 / w: f65 -a
+
+INPUT type=image sin ALT attribute - 100%
+    <input type='image' src='1234.png'>
+    -w: f65 -a
+
+INPUT type=image con ALT null - 100%
+    <input type='image' src='1234.png' alt=''>
+    -w: f65 -a
+
+P *Yes/No radio buttons inside `fieldset` element - 25%
+P *Yes/No radio buttons conout FIELDSET - 75%
+
+INPUT type=text inside LABEL con text after control - 25%
+    <label>
+    <input type='text'>
+    Enter search text
+    </label>
+    -///
+
+INPUT type=text inside LABEL con text before y after control - 25%
+    <label>Enter search text
+    <input type='text'>
+    blanks not allowed
+    </label>
+    -///
+
+INPUT type=text inside LABEL con text before control - 0%
+    <label>Enter search text
+    <input type='text'>
+    </label>
+    -///
+
+INPUT type=text con LABEL FOR - 0%
+    <label for='label_for'>Enter search text </label>
+    <input type='text' id='label_for'>
+    -t: h44 / w: f68 -a
+
+P. INPUT type=text con aria-describedby attribute - 25%
+    <label for='fname'>First name</label>
+    <input name='' type='text' id='fname' aria-describedby='int2'>
+    <span id='int2'>A bit of instructions for this field linked with aria describedby. </span>
+    -t: aria1/ w: f68 -a
+
+P. INPUT type=text con aria-labelledby attribute - 0%
+    <span id='labelledby'>Enter search text </span>
+    <input type='text' aria-labelledby='labelledby'>
+    -t: ARIA16/ w: f68 -a
+
+P. `input type=text` con `aria-label` attribute - 25%
+    <input type='text' aria-label='Enter search text'>
+    -t: aria14/ w: f68 -a
+
+P. `input type=text` con `title` attribute - 25%
+     <input type='text' title='Enter search text'>
+     -t: h65/ w: f68 -a
+
+INPUT type=text inside blank LABEL - 100%
+    <p>Previous element</p>
+    <label>
+    <input type='text'>
+    </label>
+    -4.1.2 -a / 1.3.1 -a / 2.4.6 aa
+
+INPUT type=text con blunak LABEL FOR - 100%
+    <p>Previous element</p>
+    <label for='label_for_blank'></label>
+    <input type='text' id='label_for_blank'>
+    -4.1.2 -a / 1.3.1 -a / 2.4.6 aa
+
+P INPUT con aria-labelledby pointing to role=presentation element - 25%
+    <span>Previous element</span>
+    <span role='presentation' id='labelledby-presentation'>Enter search text </span>
+    <input type='text' aria-labelledby='labelledby-presentation'>
+
+P LABELs reference controls con duplicate ids - 75%
+    <a href='http://www.example.com'>Previous link</a>
+    <label id='Label1' for='Input1'>Label One</label><input id='Input1'>
+    <label id='Label1' for='Input1'>Label Two</label><input id='Input1'>
+    <label id='Label1'>Label Three</label><input id='Input1' aria-labelledby='Label1'>
+    -w: f77 -a

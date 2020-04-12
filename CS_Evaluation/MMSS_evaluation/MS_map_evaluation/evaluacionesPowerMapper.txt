@@ -1,0 +1,30 @@
+*AREA y IMG con ALT attributes - 50%
+*AREA con ALT attribute y IMG con ALT null - 25%
+*AREA con TITLE attribute - 75%
+<img src='1234.png' alt='this is alt text' usemap='#area_title_map1'>
+    <map id='area_title_map1' name='area_title_map1'>
+    <area title='this is left title text' coords='0,0,100,100' href='left_arrow.htm' target='frame1'></area>
+    <area title='this is right title text' coords='200,0,300,100' href='right_arrow.htm' target='frame1'></area>
+    </map>
+    -f65
+*AREA con aria-label attribute - 50%
+*AREA con aria-labelledby attribute - 75% 
+*AREA sin ALT attribute - 100%
+*AREA con ALT null attribute - 100%
+*Image MAP sin NAME attribute - 50%
+
+
+si <area> no tiene atributo alt  - 100%
+    <img src='1234.png' usemap='#area_noalt_map1'>
+    <map id='area_noalt_map1' name='area_noalt_map1'>
+       <area coords='0,0,100,100' href='left_arrow.htm' target='frame1'></area>
+       <area coords='200,0,300,100' href='right_arrow.htm' target='frame1'></area>
+    </map>
+	-f65
+si <area>  tiene alt nulo  - 100%
+	<img src='1234.png' alt='' usemap='#area_nullalt_map1'>
+    <map id='area_nullalt_map1' name='area_nullalt_map1'>
+       <area alt='' coords='0,0,100,100' href='left_arrow.htm' target='frame1'></area>
+       <area alt='' coords='200,0,300,100' href='right_arrow.htm' target='frame1'></area>
+    </map>
+    -f65

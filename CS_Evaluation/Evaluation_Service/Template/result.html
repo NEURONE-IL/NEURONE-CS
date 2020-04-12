@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+	{% block content %}
+
+		<div class="results">
+			<h3 class="col-4"> URL : </h3>
+				<h3> {{url}} <h3>
+			<h3> {{_('TOTAL PERCENTAGE OF TAGS FAILED')}} : </h3> 
+				<h3> {{percentFinalFailed}}%</h3>
+			<h3> {{_('TOTAL AMOUNT OF TAGS IN THE CONTENT')}} : </h3> 
+				<h3> {{tagsInContent}}</h3>
+
+          	{% for r in results %}
+      			<div class="pad-20 result" >
+      				<h2 class="title-tag"> {{r.tag}} </h2>
+					<p class="p-text"> {{_('Count in content')}} : {{r.evaluated}} </p>
+					<p class="p-text"> {{_('With incompatible definitions')}} : {{r.failed}} </p>
+					<p class="p-text"> {{_('Failure percentage')}}: {{r.percent}}%</p>
+      			</div>
+           	{%endfor%}
+
+        </div>
+	    <div class="btn-center">
+        	<form method="GET">
+				<button class="btn-success" id="go-back"> {{_('Go Back')}} </button>
+			</form>
+			<form method="POST" action="/recomendation" enctype='application/json'>
+				<textarea type="text" class="hidden" name="dataResults">{{results}}</textarea>
+				<input type="text" class="hidden" name="urlJson" value={{url}}>
+				<button type="submit" class="btn-success"> {{_('Recomendations')}} </button>
+			</form>
+		</div>
+
+	{% endblock %}

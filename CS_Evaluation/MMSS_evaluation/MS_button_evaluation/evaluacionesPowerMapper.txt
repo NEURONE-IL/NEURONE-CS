@@ -1,0 +1,43 @@
+BUTTON contiene solo una *(IMG con atributo TITLE) - 50%
+    <button><img src='1234.png' title='This is image title'></button>
+    -f65
+
+BUTTON contiene solo una *(IMG con aria-label) - 25%
+    <button><img src='1234.png' aria-label='This is image aria label'></button>
+    -f65
+
+BUTTON contiene solo una *(IMG con aria-labelledby) - 50%
+    <button><img src='1234.png' aria-labelledby='button_img_aria_labelledby'></button>
+    <span id='button_img_aria_labelledby'>This is an aria labelled by</span>
+    -aria10/f65
+
+BUTTON con TITLE, contiene solo una IMG con ALT null- 0%
+    <button title='This is button title'><img src='1234.png' alt=''></button>
+    -f65
+
+BUTTON con aria-label, contiene solo una IMG con ALT null- 25%
+    <h1>Preceding heading</h1>
+    <button aria-label='This is button aria label'><img src='1234.png' alt=''></button>
+    -aria6 / aria14 / f65
+
+elemento `button` contiene solo una `img` con atributo `alt` - 25%
+     <button><img src='1234.png' alt='This is image alt'></button>
+     -G196 / h37 / f65
+
+BUTTON contiene solo una IMG sin ALT - 100%
+    <p>Previous element</p>
+    <button><img src='1234.png'></button>
+    -F65
+
+BUTTON contiene solo una IMG con atributo ALT null - 100%
+    <button><img src='1234.png' alt=''></button>
+    -f65
+
+BUTTON con TITLE, contiene solo una IMG sin ALT - 25%
+    <h1>Preceding heading</h1>
+    <button title='This is button title'><img src='1234.png'></button>
+    -f65
+
+BUTTON con aria-label contiene solo una IMG sin ALT - 25%
+    <button aria-label='This is button aria label'><img src='1234.png'></button>
+    -f65
